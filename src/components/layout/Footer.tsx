@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { MapPin, Globe, Heart } from "lucide-react";
+import { Eye, MapPin, Globe, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
