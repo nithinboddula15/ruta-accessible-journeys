@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Search, MapPin, Accessible, Menu, X } from "lucide-react";
+import { Search, MapPin, Menu, X, Eye } from "lucide-react";
 import { CustomButton } from "../ui/CustomButton";
 import { cn } from "@/lib/utils";
 
@@ -66,7 +66,7 @@ const Header = () => {
           <CustomButton 
             variant="outline" 
             size="sm"
-            icon={<Accessible className="h-4 w-4" />}
+            icon={<Eye className="h-4 w-4" />}
           >
             Accessibility
           </CustomButton>
@@ -125,7 +125,7 @@ const Header = () => {
               <CustomButton 
                 variant="outline" 
                 size="sm"
-                icon={<Accessible className="h-4 w-4" />}
+                icon={<Eye className="h-4 w-4" />}
                 className="justify-start"
               >
                 Accessibility

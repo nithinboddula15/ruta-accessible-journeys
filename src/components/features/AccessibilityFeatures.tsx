@@ -1,8 +1,7 @@
-
 import { useEffect, useRef } from "react";
 import { 
-  Eye, EyeOff, Ear, EarOff, MessageSquare, VolumeX, 
-  VolumeX, Volume2, Languages, ScanText, MapPin
+  Eye, EyeOff, Ear, EarOff, MessageSquare, 
+  Volume2, Languages, ScanText, MapPin
 } from "lucide-react";
 import { CustomCard, CardHeader, CardTitle, CardDescription, CardContent } from "../ui/CustomCard";
 import { AnimatedIcon } from "../ui/AnimatedIcon";

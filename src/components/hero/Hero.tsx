@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import { MapPin, Navigation, Bus, Accessible } from "lucide-react";
+import { MapPin, Navigation, Bus } from "lucide-react";
 import { CustomButton } from "../ui/CustomButton";
 import { cn } from "@/lib/utils";
 
@@ -63,7 +63,7 @@ const Hero = () => {
             <CustomButton 
               variant="outline" 
               size="lg"
-              icon={<Accessible className="h-5 w-5" />}
+              icon={<Navigation className="h-5 w-5" />}
             >
               Explore Accessibility
             </CustomButton>
@@ -83,7 +83,7 @@ const Hero = () => {
                 description: "Real-time updates on buses, trains and other public transport" 
               },
               { 
-                icon: <Accessible className="h-6 w-6" />, 
+                icon: <MapPin className="h-6 w-6" />, 
                 title: "Inclusive Travel", 
                 description: "Specialized features for blind, deaf, and mute travelers" 
               },
@@ -112,9 +112,8 @@ const Hero = () => {
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-12 md:h-24"
+          className="w-full h-12 md:h-24 text-background"
           fill="currentColor"
-          className="text-background"
         >
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V56.44Z" />
         </svg>

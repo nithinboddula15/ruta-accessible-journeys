@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { Accessible, MapPin, Globe, Heart } from "lucide-react";
+import { MapPin, Globe, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -123,7 +123,7 @@ const Footer = () => {
               href="#" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center space-x-1"
             >
-              <Accessible className="h-4 w-4" />
+              <Eye className="h-4 w-4" />
               <span>Accessibility</span>
             </a>
             <a 
