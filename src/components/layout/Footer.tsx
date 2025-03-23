@@ -1,6 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import { Eye, MapPin, Globe, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="mb-6">
-              <h2 className="text-2xl font-display font-bold text-primary">
+              <Link to="/" className="text-2xl font-display font-bold text-primary">
                 RUTA
-              </h2>
+              </Link>
               <p className="mt-2 text-sm text-muted-foreground">
                 India's First Truly Accessible Travel App
               </p>
@@ -39,19 +40,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                "Smart Travel Planning", 
-                "Multiple Travel Modes", 
-                "Live Tracking", 
-                "Budget Recommendations", 
-                "Secure Booking"
+                { label: "Smart Travel Planning", path: "/plan-journey" }, 
+                { label: "Multiple Travel Modes", path: "/" }, 
+                { label: "Live Tracking", path: "/" }, 
+                { label: "Budget Recommendations", path: "/plan-journey" }, 
+                { label: "Secure Booking", path: "/" }
               ].map((item) => (
-                <li key={item}>
-                  <a 
-                    href="#"
+                <li key={item.label}>
+                  <Link 
+                    to={item.path}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,19 +64,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                "For Blind Travelers", 
-                "For Deaf Travelers", 
-                "For Mute Travelers", 
-                "Crowdsourced Data", 
-                "AI Travel Assistance"
+                { label: "For Blind Travelers", path: "/accessibility" }, 
+                { label: "For Deaf Travelers", path: "/accessibility" }, 
+                { label: "For Mute Travelers", path: "/accessibility" }, 
+                { label: "Crowdsourced Data", path: "/accessibility" }, 
+                { label: "AI Travel Assistance", path: "/plan-journey" }
               ].map((item) => (
-                <li key={item}>
-                  <a 
-                    href="#"
+                <li key={item.label}>
+                  <Link 
+                    to={item.path}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -87,20 +88,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                "About Us", 
-                "Contact", 
-                "Careers", 
-                "Press", 
-                "Privacy Policy", 
-                "Terms of Service"
+                { label: "About Us", path: "/about" }, 
+                { label: "Contact", path: "/about" }, 
+                { label: "Careers", path: "/about" }, 
+                { label: "Press", path: "/about" }, 
+                { label: "Privacy Policy", path: "/about" }, 
+                { label: "Terms of Service", path: "/about" }
               ].map((item) => (
-                <li key={item}>
-                  <a 
-                    href="#"
+                <li key={item.label}>
+                  <Link 
+                    to={item.path}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -119,27 +120,27 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <a 
-              href="#" 
+            <Link 
+              to="/accessibility" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center space-x-1"
             >
               <Eye className="h-4 w-4" />
               <span>Accessibility</span>
-            </a>
-            <a 
-              href="#" 
+            </Link>
+            <Link 
+              to="/" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center space-x-1"
             >
               <MapPin className="h-4 w-4" />
               <span>Sitemap</span>
-            </a>
-            <a 
-              href="#" 
+            </Link>
+            <Link 
+              to="/" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center space-x-1"
             >
               <Globe className="h-4 w-4" />
               <span>Languages</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
