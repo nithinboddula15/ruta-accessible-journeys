@@ -10,8 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="mb-6">
-              <Link to="/" className="text-2xl font-display font-bold text-primary">
-                RUTA
+              <Link to="/" className="flex items-center">
+                <img 
+                  src="/ruta-logo.svg" 
+                  alt="RUTA Logo" 
+                  className="h-10 w-auto mr-2" 
+                />
+                <span className="text-2xl font-display font-bold text-primary">RUTA</span>
               </Link>
               <p className="mt-2 text-sm text-muted-foreground">
                 India's First Truly Accessible Travel App

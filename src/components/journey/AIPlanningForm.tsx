@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { CustomCard, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/CustomCard";
 import { CustomButton } from "@/components/ui/CustomButton";
@@ -179,8 +178,7 @@ const AIPlanningForm = ({ onPlanComplete }: AIPlanningFormProps) => {
             <CustomButton 
               variant="default" 
               arrow
-              className="w-full"
-              disabled={isLoading}
+              className={cn("w-full", isLoading && "opacity-70 pointer-events-none")}
             >
               {isLoading ? (
                 <>
@@ -201,7 +199,6 @@ const AIPlanningForm = ({ onPlanComplete }: AIPlanningFormProps) => {
   );
 };
 
-// Mock function to generate plan data based on inputs
 function generateMockPlan(
   from: string, 
   to: string, 
@@ -209,7 +206,6 @@ function generateMockPlan(
   optimizeFor: "time" | "budget" | "comfort",
   accessibility: string[]
 ) {
-  // Format date in a more readable format
   const formattedDate = new Date(date).toLocaleDateString("en-IN", {
     weekday: "long",
     year: "numeric",
@@ -217,7 +213,6 @@ function generateMockPlan(
     day: "numeric"
   });
   
-  // Generate mock duration, cost and comfort based on optimization choice
   let duration = "3h 30m";
   let cost = 1200;
   let comfort = 3;
@@ -236,7 +231,6 @@ function generateMockPlan(
     comfort = 5;
   }
   
-  // Generate accessibility features based on selections
   const accessibilityFeatures = accessibility.map(feature => {
     switch(feature) {
       case "wheelchair": return "Wheelchair accessible route";
@@ -249,7 +243,6 @@ function generateMockPlan(
     }
   }).filter(f => f);
   
-  // Generate steps with appropriate accessibility considerations
   const steps = [
     {
       title: `Depart from ${from}`,
