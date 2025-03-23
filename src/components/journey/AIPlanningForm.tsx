@@ -3,7 +3,7 @@ import { useState } from "react";
 import { CustomCard, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/CustomCard";
 import { CustomButton } from "@/components/ui/CustomButton";
 import { AnimatedIcon } from "@/components/ui/AnimatedIcon";
-import { MapPin, Calendar, Clock, IndianRupee, Heart, Sparkles, Check, AlertTriangle } from "lucide-react";
+import { MapPin, Calendar, Clock, IndianRupee, Heart, Sparkles, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "@/components/ui/use-toast";
 
@@ -51,8 +51,7 @@ const AIPlanningForm = ({ onPlanComplete }: AIPlanningFormProps) => {
       
       toast({
         title: "Plan generated!",
-        description: "Your journey has been planned successfully.",
-        icon: <Sparkles className="h-4 w-4 text-green-500" />,
+        description: "Your journey has been planned successfully."
       });
     }, 1500);
   };
@@ -178,14 +177,22 @@ const AIPlanningForm = ({ onPlanComplete }: AIPlanningFormProps) => {
           
           <div className="pt-4">
             <CustomButton 
-              type="submit"
               variant="default" 
               arrow
               className="w-full"
-              icon={<Sparkles className="h-4 w-4" />}
               disabled={isLoading}
             >
-              {isLoading ? "Planning Your Journey..." : "Plan My Journey"}
+              {isLoading ? (
+                <>
+                  <Sparkles className="h-4 w-4" />
+                  Planning Your Journey...
+                </>
+              ) : (
+                <>
+                  <Sparkles className="h-4 w-4" />
+                  Plan My Journey
+                </>
+              )}
             </CustomButton>
           </div>
         </form>
