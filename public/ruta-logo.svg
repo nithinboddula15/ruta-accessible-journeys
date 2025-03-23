@@ -1,8 +1,30 @@
 
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" fill="#1E40AF"/>
-  <path d="M40 60C51.0457 60 60 51.0457 60 40C60 28.9543 51.0457 20 40 20C28.9543 20 20 28.9543 20 40C20 51.0457 28.9543 60 40 60Z" fill="#60A5FA"/>
-  <path d="M32 30V50H35V42H45V50H48V30H45V39H35V30H32Z" fill="white"/>
-  <path d="M23 48L25 42H29L27 48H23Z" fill="white"/>
-  <path d="M51 48L53 42H57L55 48H51Z" fill="white"/>
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Green luggage background -->
+  <path d="M35 35 L140 20 L165 120 L60 135 Z" fill="#00C853" stroke="#00C853" stroke-width="2"/>
+  
+  <!-- Luggage handle -->
+  <path d="M140 20 L165 25 L175 65 L160 70" fill="#00C853" stroke="#00C853" stroke-width="2"/>
+  
+  <!-- Luggage wheels -->
+  <circle cx="45" cy="135" r="10" fill="#00C853" stroke="#00C853" stroke-width="2"/>
+  <circle cx="140" cy="120" r="10" fill="#00C853" stroke="#00C853" stroke-width="2"/>
+  
+  <!-- RUTA text -->
+  <path d="M70 80 L65 80 L65 80 L65 110 L70 110 L70 98 L85 98 L85 110 L90 110 L90 80 L85 80 L85 93 L70 93 L70 80Z" fill="white"/>
+  <!-- Speed lines for R -->
+  <path d="M60 90 L63 90 M57 93 L60 93 M54 96 L57 96" stroke="white" stroke-width="1.5"/>
+  
+  <!-- U -->
+  <path d="M97 80 L97 105 Q97 110, 102 110 L108 110 Q113 110, 113 105 L113 80 L108 80 L108 105 Q108 105, 108 105 L102 105 Q102 105, 102 105 L102 80 L97 80Z" fill="black"/>
+  
+  <!-- T -->
+  <path d="M115 80 L115 85 L123 85 L123 110 L128 110 L128 85 L135 85 L135 80 L115 80Z" fill="black"/>
+  
+  <!-- Location pin with arrow -->
+  <path d="M140 90 L140 100 Q140 110, 145 110 L150 110 Q155 110, 155 100 L155 90 Q155 80, 150 80 L145 80 Q140 80, 140 90Z" fill="white"/>
+  <path d="M143 85 L152 85 L148 75 L143 85" fill="white"/>
+  
+  <!-- "GO ANYWHERE, FREELY" tagline -->
+  <text x="85" y="125" font-family="Arial" font-size="10" font-weight="bold" fill="black">GO ANYWHERE, FREELY</text>
 </svg>

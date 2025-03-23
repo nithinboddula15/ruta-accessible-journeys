@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src="/ruta-logo.svg" 
               alt="RUTA Logo" 
-              className="h-10 w-auto mr-2" 
+              className="h-14 w-auto mr-1" 
             />
             <span className="text-2xl font-display font-bold text-primary">RUTA</span>
           </Link>

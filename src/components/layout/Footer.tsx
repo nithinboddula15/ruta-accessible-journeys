@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { Eye, MapPin, Globe, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -14,7 +13,7 @@ const Footer = () => {
                 <img 
                   src="/ruta-logo.svg" 
                   alt="RUTA Logo" 
-                  className="h-10 w-auto mr-2" 
+                  className="h-14 w-auto mr-1" 
                 />
                 <span className="text-2xl font-display font-bold text-primary">RUTA</span>
               </Link>
@@ -32,7 +31,6 @@ const Footer = () => {
                   aria-label={`Visit our ${social} page`}
                 >
                   <span className="sr-only">{social}</span>
-                  {/* Icon placeholders */}
                   <div className="h-5 w-5 bg-foreground/30 rounded-full" />
                 </a>
               ))}
